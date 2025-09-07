@@ -1,0 +1,31 @@
+{
+  "name": "cvr-college-bus-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CVR College Bus Tracker - Full Stack Application",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace mobile start\"",
+    "dev:backend": "yarn workspace backend dev",
+    "dev:mobile": "yarn workspace mobile start",
+    "test": "yarn workspaces run test",
+    "test:backend": "yarn workspace backend test",
+    "test:mobile": "yarn workspace mobile test",
+    "build": "yarn workspaces run build",
+    "build:backend": "yarn workspace backend build",
+    "lint": "yarn workspaces run lint",
+    "clean": "yarn workspaces run clean",
+    "mobile:android": "yarn workspace mobile android",
+    "mobile:ios": "yarn workspace mobile ios"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  }
+}

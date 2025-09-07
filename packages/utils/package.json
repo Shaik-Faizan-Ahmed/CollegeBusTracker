@@ -1,0 +1,17 @@
+{
+  "name": "@cvr-bus-tracker/utils",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared utility functions for CVR Bus Tracker",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@cvr-bus-tracker/shared-types": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0"
+  }
+}

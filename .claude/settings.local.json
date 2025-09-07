@@ -3,7 +3,16 @@
     "allow": [
       "Bash(md-tree explode:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx react-native:*)",
+      "Bash(npx @react-native-community/cli:*)",
+      "Bash(yarn add:*)",
+      "Bash(npm install:*)",
+      "Bash(yarn install)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(taskkill:*)"
     ],
     "deny": [],
     "ask": []

@@ -80,6 +80,17 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        
+        // Read environment variables
+        Properties properties = new Properties()
+        if (project.rootProject.file('.env.local').exists()) {
+            properties.load(project.rootProject.file('.env.local').newDataInputStream())
+        }
+        
+        // Set manifestPlaceholders for Google Maps API key
+        manifestPlaceholders = [
+            GOOGLE_MAPS_API_KEY_ANDROID: properties.getProperty('GOOGLE_MAPS_API_KEY_ANDROID', 'your_android_api_key_here')
+        ]
     }
     signingConfigs {
         debug {

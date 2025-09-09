@@ -1,0 +1,1987 @@
+
+> backend@1.0.0 dev
+> nodemon src/server.ts
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13
+      throw new Error('Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required');
+            ^
+Error: Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required
+    at new DatabaseService (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13:13)
+    at Object.<anonymous> (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:84:32)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13
+      throw new Error('Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required');
+            ^
+Error: Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required
+    at new DatabaseService (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13:13)
+    at Object.<anonymous> (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:84:32)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13
+      throw new Error('Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required');
+            ^
+Error: Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required
+    at new DatabaseService (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13:13)
+    at Object.<anonymous> (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:84:32)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13
+      throw new Error('Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required');
+            ^
+Error: Missing Supabase configuration: SUPABASE_URL and SUPABASE_ANON_KEY are required
+    at new DatabaseService (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:13:13)
+    at Object.<anonymous> (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:84:32)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(36,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id: string; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy: number; is_active: boolean; created_at: string; updated_at: string; expires_at: string; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id: string; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy: number; is_active: boolean; created_at: string; updated_at: string; expires_at: string; }' is not assignable to type 'never'.
+src/services/trackingService.ts(45,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(46,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(48,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(49,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(51,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(52,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(68,15): error TS2345: Argument of type '{ latitude: number; longitude: number; accuracy: number; updated_at: string; }' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(85,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(97,15): error TS2345: Argument of type '{ is_active: boolean; updated_at: string; }' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(112,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(143,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(144,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(145,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(146,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(147,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(148,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(149,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(150,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(179,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(180,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(181,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(182,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(183,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(184,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(185,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(186,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(200,15): error TS2345: Argument of type '{ is_active: boolean; }' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(21,24): error TS2304: Cannot find name 'Database'.
+src/services/trackingService.ts(36,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type 'Database[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type 'Database' is not assignable to type 'never'.
+src/services/trackingService.ts(45,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(46,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(48,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(49,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(51,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(52,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(68,15): error TS2345: Argument of type '{ latitude: number; longitude: number; accuracy: number; updated_at: string; }' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(85,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(97,15): error TS2345: Argument of type '{ is_active: boolean; updated_at: string; }' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(112,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(143,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(144,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(145,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(146,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(147,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(148,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(149,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(150,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(179,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(180,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(181,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(182,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(183,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(184,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(185,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(186,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(200,15): error TS2345: Argument of type '{ is_active: boolean; }' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2304, 2769, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2345, 2339, 2345, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(69,15): error TS2345: Argument of type '{ latitude: number; longitude: number; accuracy: number; updated_at: string; }' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(86,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(98,15): error TS2345: Argument of type '{ is_active: boolean; updated_at: string; }' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(113,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(144,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(145,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(146,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(147,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(148,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(149,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(150,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(151,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(180,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(181,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(182,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(183,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(184,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(185,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(186,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(187,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(201,15): error TS2345: Argument of type '{ is_active: boolean; }' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(100,15): error TS2345: Argument of type '{ is_active: boolean; updated_at: string; }' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(115,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(146,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(147,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(149,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(152,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(153,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(182,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(183,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(184,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(185,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(188,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(189,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(203,15): error TS2345: Argument of type '{ is_active: boolean; }' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(205,15): error TS2345: Argument of type '{ is_active: boolean; }' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(37,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Argument of type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }[]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "bus_sessions", never, "POST">', gave the following error.
+    Type '{ id?: string | undefined; bus_number: string; tracker_id: string; latitude: number; longitude: number; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined; }' is not assignable to type 'never'.
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2769, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345,
+    2339, 2345, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type '{ id?: string | undefined; bus_number?: string | undefined; tracker_id?: string | undefined; latitude?: number | undefined; longitude?: number | undefined; accuracy?: number | undefined; is_active?: boolean | undefined; created_at?: string | undefined; updated_at?: string | undefined; expires_at?: string | undefined...' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2345, 2339,
+    2345, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(46,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(47,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(48,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(49,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(50,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(51,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(52,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(53,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(76,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(148,16): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(149,23): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(150,23): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(151,22): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(152,23): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(153,22): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(154,34): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(155,32): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2345, 2339,
+    2345, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2339, 2339,
+    2339, 2339, 2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(76,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(88,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(117,43): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2345, 2339, 2345,
+    2339, 2339, 2339,
+    2339, 2339, 2339,
+    2339, 2339, 2339,
+    2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(76,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(184,19): error TS2339: Property 'id' does not exist on type 'never'.
+src/services/trackingService.ts(185,26): error TS2339: Property 'bus_number' does not exist on type 'never'.
+src/services/trackingService.ts(186,26): error TS2339: Property 'tracker_id' does not exist on type 'never'.
+src/services/trackingService.ts(187,25): error TS2339: Property 'latitude' does not exist on type 'never'.
+src/services/trackingService.ts(188,26): error TS2339: Property 'longitude' does not exist on type 'never'.
+src/services/trackingService.ts(189,25): error TS2339: Property 'is_active' does not exist on type 'never'.
+src/services/trackingService.ts(190,37): error TS2339: Property 'updated_at' does not exist on type 'never'.
+src/services/trackingService.ts(191,35): error TS2339: Property 'expires_at' does not exist on type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2345, 2345, 2339,
+    2339, 2339, 2339,
+    2339, 2339, 2339,
+    2339, 2345
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(76,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2345, 2345, 2345 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(76,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2345, 2345, 2345 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(76,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2345, 2345, 2345 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/trackingService.ts(76,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(105,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+src/services/trackingService.ts(209,15): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2345, 2345, 2345 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connection failed: {
+  code: 'PGRST205',
+  details: null,
+  hint: null,
+  message: "Could not find the table 'public.bus_sessions' in the schema cache"
+}
+❌ Failed to start server: Error: Database connection failed: Unknown error
+    at DatabaseService.connect (D:\vibecoding\CollegeBusTracker\apps\backend\src\services\databaseService.ts:45:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async startServer (D:\vibecoding\CollegeBusTracker\apps\backend\src\server.ts:65:5)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(53,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(58,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(63,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(74,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(76,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(92,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(177,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(182,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2551, 2551,
+    2322, 2339, 2339,
+    2339, 7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(53,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(58,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(63,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(74,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(76,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(92,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(177,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(182,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2551, 2551,
+    2322, 2339, 2339,
+    2339, 7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(53,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(58,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(63,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(74,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(76,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(92,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(177,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(182,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2551, 2551,
+    2322, 2339, 2339,
+    2339, 7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(53,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(58,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(63,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(74,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(76,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(92,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(177,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(182,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2551, 2551,
+    2322, 2339, 2339,
+    2339, 7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(53,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(58,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(63,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(74,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(76,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(92,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(177,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(182,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2551, 2551,
+    2322, 2339, 2339,
+    2339, 7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(53,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(58,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(63,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(74,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(76,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(92,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(177,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(182,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2551, 2551,
+    2322, 2339, 2339,
+    2339, 7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(53,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(58,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(63,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(74,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(76,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(92,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(177,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(182,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2551, 2551,
+    2322, 2339, 2339,
+    2339, 7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(52,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(54,13): error TS2304: Cannot find name 'Tracing'.
+src/services/monitoringService.ts(56,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(57,20): error TS2551: Property 'Integrations' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'. Did you mean 'fsIntegration'?
+src/services/monitoringService.ts(62,7): error TS2322: Type '(event: Event, hint: EventHint) => Event | null' is not assignable to type '(event: ErrorEvent, hint: EventHint) => ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+  Type 'Event | null' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+    Type 'Event' is not assignable to type 'ErrorEvent | PromiseLike<ErrorEvent | null> | null'.
+      Type 'Event' is not assignable to type 'ErrorEvent'.
+        Types of property 'type' are incompatible.
+          Type 'EventType' is not assignable to type 'undefined'.
+            Type '"transaction"' is not assignable to type 'undefined'.
+src/services/monitoringService.ts(73,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(75,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(90,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(91,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(176,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(181,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2551, 2304, 2551,
+    2551, 2322, 2339,
+    2339, 2339, 7006,
+    2694, 2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(52,35): error TS2554: Expected 0 arguments, but got 1.
+src/services/monitoringService.ts(66,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(68,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(83,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(84,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(169,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(174,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [
+    2554, 2339,
+    2339, 2339,
+    7006, 2694,
+    2339
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(52,35): error TS2554: Expected 0 arguments, but got 1.
+src/services/monitoringService.ts(66,20): error TS2339: Property 'requestHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(81,20): error TS2339: Property 'Handlers' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(82,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/services/monitoringService.ts(167,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(172,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2554, 2339, 2339, 7006, 2694, 2339 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(52,35): error TS2554: Expected 0 arguments, but got 1.
+src/services/monitoringService.ts(66,20): error TS2339: Property 'requestHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(81,20): error TS2339: Property 'errorHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(162,71): error TS2694: Namespace '"D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index"' has no exported member 'Transaction'.
+src/services/monitoringService.ts(167,19): error TS2339: Property 'startTransaction' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2554, 2339, 2339, 2694, 2339 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(52,35): error TS2554: Expected 0 arguments, but got 1.
+src/services/monitoringService.ts(66,20): error TS2339: Property 'requestHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(81,20): error TS2339: Property 'errorHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(169,14): error TS2339: Property 'setData' does not exist on type 'Span'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2554, 2339, 2339, 2339 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(52,35): error TS2554: Expected 0 arguments, but got 1.
+src/services/monitoringService.ts(66,20): error TS2339: Property 'requestHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(81,20): error TS2339: Property 'errorHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(169,14): error TS2339: Property 'setData' does not exist on type 'Span'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2554, 2339, 2339, 2339 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(74,20): error TS2339: Property 'errorHandler' does not exist on type 'typeof import("D:/vibecoding/CollegeBusTracker/node_modules/@sentry/node/build/types/index")'.
+src/services/monitoringService.ts(162,14): error TS2339: Property 'setData' does not exist on type 'Span'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2339, 2339 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/services/monitoringService.ts(167,14): error TS2339: Property 'setData' does not exist on type 'Span'.
+
+    at createTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (D:\vibecoding\CollegeBusTracker\apps\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2339 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+🔍 Sentry monitoring disabled (no DSN provided)
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+🔍 Sentry monitoring disabled (no DSN provided)
+Database connected successfully
+✅ Database connected successfully
+🚀 CVR Bus Tracker API Server running on port 3000
+📱 Environment: development
+🔌 WebSocket server ready
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

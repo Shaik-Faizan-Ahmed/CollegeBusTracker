@@ -4,6 +4,22 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
+## Prerequisites
+
+### Google Maps API Setup (Required for Map Functionality)
+
+The app uses Google Maps for displaying bus locations. You need to set up Google Maps API keys:
+
+1. **Quick Setup**: Copy `.env.example` to `.env.local` and add your Google Maps API keys:
+```bash
+cp .env.example .env.local
+# Edit .env.local and replace the API key placeholders
+```
+
+2. **Detailed Setup**: Follow the comprehensive guide at `../../docs/setup/google-maps-setup.md`
+
+**Without Google Maps API keys, the map functionality will not work properly.**
+
 ## Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.

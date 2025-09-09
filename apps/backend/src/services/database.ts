@@ -1,17 +1,14 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
-import { DatabaseConfig } from '@cvr-bus-tracker/config';
+import { DatabaseConfig, validateDatabaseConfig } from '@cvr-bus-tracker/config';
 
 class DatabaseService {
   private supabase: SupabaseClient;
   private static instance: DatabaseService;
 
   private constructor() {
-    const config: DatabaseConfig = {
-      url: process.env.SUPABASE_URL || '',
-      serviceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY || '',
-    };
+    const config: DatabaseConfig = this.loadDatabaseConfig();
 
-    if (!config.url || !config.serviceRoleKey) {
+    if (!validateDatabaseConfig(config)) {
       throw new Error('Supabase configuration is missing. Please check environment variables.');
     }
 
@@ -53,6 +50,16 @@ class DatabaseService {
       console.error('Database connection test error:', error);
       return false;
     }
+  }
+
+  /**
+   * Load database configuration from environment through config objects
+   */
+  private loadDatabaseConfig(): DatabaseConfig {
+    return {
+      url: process.env.SUPABASE_URL || '',
+      serviceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY || '',
+    };
   }
 
   /**

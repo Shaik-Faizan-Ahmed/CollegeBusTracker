@@ -1,8 +1,18 @@
 import express from 'express';
-import { ApiResponse } from '@cvr-bus-tracker/shared-types';
-import DatabaseService from '../services/database';
+import { ApiResponse, ApiError } from '@cvr-bus-tracker/shared-types';
+import databaseService from '../services/databaseService';
+import ServerConfigService from '../config/serverConfig';
 
 const router = express.Router();
+
+interface HealthData {
+  status: string;
+  timestamp: string;
+  uptime: number;
+  environment: string;
+  version: string;
+  database: string;
+}
 
 /**
  * GET /api/health
@@ -10,35 +20,44 @@ const router = express.Router();
  */
 router.get('/', async (req: express.Request, res: express.Response) => {
   try {
-    const database = DatabaseService.getInstance();
-    const dbHealth = await database.healthCheck();
+    const serverConfig = ServerConfigService.getInstance();
+    
+    let dbStatus = 'disconnected';
+    try {
+      if (databaseService.isConnectionActive()) {
+        await databaseService.healthCheck();
+        dbStatus = 'connected';
+      }
+    } catch (dbError) {
+      dbStatus = 'error';
+    }
 
-    const response: ApiResponse = {
+    const response: ApiResponse<HealthData> = {
       success: true,
-      message: 'CVR Bus Tracker API is healthy',
       data: {
+        status: 'healthy',
         timestamp: new Date().toISOString(),
         uptime: process.uptime(),
-        environment: process.env.NODE_ENV || 'development',
+        environment: serverConfig.getNodeEnv(),
         version: '1.0.0',
-        database: dbHealth,
+        database: dbStatus,
       },
+      timestamp: new Date().toISOString()
     };
 
     // If database is unhealthy, return 503 status but still provide info
-    const statusCode = dbHealth.status === 'healthy' ? 200 : 503;
+    const statusCode = dbStatus === 'connected' ? 200 : 503;
     res.status(statusCode).json(response);
   } catch (error) {
-    const response: ApiResponse = {
+    const serverConfig = ServerConfigService.getInstance();
+    const response: ApiError = {
       success: false,
-      error: 'Health check failed',
-      message: error instanceof Error ? error.message : 'Unknown error',
-      data: {
-        timestamp: new Date().toISOString(),
-        uptime: process.uptime(),
-        environment: process.env.NODE_ENV || 'development',
-        version: '1.0.0',
+      error: {
+        code: 'HEALTH_CHECK_FAILED',
+        message: 'Health check failed',
+        details: error instanceof Error ? error.message : 'Unknown error'
       },
+      timestamp: new Date().toISOString()
     };
 
     res.status(500).json(response);

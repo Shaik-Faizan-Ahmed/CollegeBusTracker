@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: cvr-bus-tracker-backend
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: yarn workspace backend build:production
+    startCommand: yarn workspace backend start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SENTRY_DSN
+        sync: false
+    healthCheckPath: /api/health
+    autoDeploy: true

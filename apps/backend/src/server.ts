@@ -3,28 +3,34 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import { createServer } from 'http';
-import { Server } from 'socket.io';
 import dotenv from 'dotenv';
 
 // Load environment variables
 dotenv.config();
 
-// Import routes
+// Import services and routes
+import ServerConfigService from './config/serverConfig';
+import databaseService from './services/databaseService';
+import MonitoringService from './services/monitoringService';
 import healthRoute from './routes/health';
+import healthRoutes from './routes/healthRoutes';
+import busRoutes from './routes/busRoutes';
+import trackerRoutes from './routes/trackerRoutes';
+import { errorHandler, notFoundHandler } from './middleware/errorHandler';
+import { WebSocketServer } from './websocket';
 
 const app = express();
 const server = createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:8081'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  },
-});
+const serverConfig = ServerConfigService.getInstance();
+const monitoringService = MonitoringService.getInstance();
+
+// Initialize monitoring (must be first)
+monitoringService.initialize(app);
 
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:8081'],
+  origin: serverConfig.getCorsOrigins(),
 }));
 app.use(morgan('combined'));
 app.use(express.json());
@@ -32,39 +38,37 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/health', healthRoute);
+app.use('/api/health', healthRoutes);
+app.use('/api/buses', busRoutes);
+app.use('/api/tracker', trackerRoutes);
 
-// Basic error handling middleware
-app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
-  console.error('Error:', err.message);
-  res.status(500).json({
-    success: false,
-    error: 'Internal server error',
-    message: process.env.NODE_ENV === 'development' ? err.message : 'Something went wrong',
-  });
-});
+// Monitoring error handler (must be before other error handlers)
+monitoringService.addErrorHandler(app);
 
-// 404 handler
-app.use((req: express.Request, res: express.Response) => {
-  res.status(404).json({
-    success: false,
-    error: 'Not found',
-    message: `Route ${req.method} ${req.path} not found`,
-  });
-});
+// Error handling middleware
+app.use(errorHandler);
+app.use(notFoundHandler);
 
-// WebSocket connection handling
-io.on('connection', (socket) => {
-  console.log('Client connected:', socket.id);
+// Initialize WebSocket server
+const webSocketServer = new WebSocketServer(server);
 
-  socket.on('disconnect', () => {
-    console.log('Client disconnected:', socket.id);
-  });
-});
+const PORT = serverConfig.getPort();
 
-const PORT = process.env.PORT || 3000;
+// Initialize database connection
+async function startServer() {
+  try {
+    await databaseService.connect();
+    console.log('✅ Database connected successfully');
+    
+    server.listen(PORT, () => {
+      console.log(`🚀 CVR Bus Tracker API Server running on port ${PORT}`);
+      console.log(`📱 Environment: ${serverConfig.getNodeEnv()}`);
+      console.log(`🔌 WebSocket server ready`);
+    });
+  } catch (error) {
+    console.error('❌ Failed to start server:', error);
+    process.exit(1);
+  }
+}
 
-server.listen(PORT, () => {
-  console.log(`🚀 CVR Bus Tracker API Server running on port ${PORT}`);
-  console.log(`📱 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔌 WebSocket server ready`);
-});
+startServer();

@@ -1,0 +1,68 @@
+{
+  "activeSessions": [
+    {
+      "id": "123e4567-e89b-12d3-a456-426614174000",
+      "bus_number": "12",
+      "tracker_id": "tracker-123",
+      "latitude": 17.3850,
+      "longitude": 78.4867,
+      "accuracy": 10.5,
+      "is_active": true,
+      "created_at": "2023-11-05T10:00:00.000Z",
+      "updated_at": "2023-11-05T10:00:00.000Z",
+      "expires_at": "2023-11-06T10:00:00.000Z"
+    },
+    {
+      "id": "456e7890-e89b-12d3-a456-426614174001",
+      "bus_number": "A5",
+      "tracker_id": "tracker-456",
+      "latitude": 17.3900,
+      "longitude": 78.4900,
+      "accuracy": 15.0,
+      "is_active": true,
+      "created_at": "2023-11-05T10:15:00.000Z",
+      "updated_at": "2023-11-05T10:15:00.000Z",
+      "expires_at": "2023-11-06T10:15:00.000Z"
+    }
+  ],
+  "inactiveSessions": [
+    {
+      "id": "789e0123-e89b-12d3-a456-426614174002",
+      "bus_number": "8",
+      "tracker_id": "tracker-789",
+      "latitude": 17.3750,
+      "longitude": 78.4800,
+      "accuracy": 20.0,
+      "is_active": false,
+      "created_at": "2023-11-05T09:00:00.000Z",
+      "updated_at": "2023-11-05T09:30:00.000Z",
+      "expires_at": "2023-11-06T09:00:00.000Z"
+    }
+  ],
+  "mockConnections": [
+    {
+      "socketId": "socket-123",
+      "type": "tracker",
+      "busNumber": "12",
+      "sessionId": "123e4567-e89b-12d3-a456-426614174000",
+      "connectedAt": "2023-11-05T10:00:00.000Z",
+      "lastActivity": "2023-11-05T10:00:00.000Z"
+    },
+    {
+      "socketId": "socket-456",
+      "type": "consumer",
+      "busNumber": "12",
+      "consumerId": "consumer-123",
+      "connectedAt": "2023-11-05T10:05:00.000Z",
+      "lastActivity": "2023-11-05T10:05:00.000Z"
+    },
+    {
+      "socketId": "socket-789",
+      "type": "consumer",
+      "busNumber": "12",
+      "consumerId": "consumer-456",
+      "connectedAt": "2023-11-05T10:10:00.000Z",
+      "lastActivity": "2023-11-05T10:10:00.000Z"
+    }
+  ]
+}

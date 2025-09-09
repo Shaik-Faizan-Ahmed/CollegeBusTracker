@@ -1,0 +1,94 @@
+{
+  "locationUpdate": {
+    "valid": {
+      "busNumber": "12",
+      "latitude": 17.3850,
+      "longitude": 78.4867,
+      "accuracy": 10.5,
+      "timestamp": 1699123456789,
+      "sessionId": "123e4567-e89b-12d3-a456-426614174000"
+    },
+    "invalid": {
+      "invalidLatitude": {
+        "busNumber": "12",
+        "latitude": 91,
+        "longitude": 78.4867,
+        "accuracy": 10.5,
+        "timestamp": 1699123456789,
+        "sessionId": "123e4567-e89b-12d3-a456-426614174000"
+      },
+      "invalidLongitude": {
+        "busNumber": "12",
+        "latitude": 17.3850,
+        "longitude": 181,
+        "accuracy": 10.5,
+        "timestamp": 1699123456789,
+        "sessionId": "123e4567-e89b-12d3-a456-426614174000"
+      },
+      "poorAccuracy": {
+        "busNumber": "12",
+        "latitude": 17.3850,
+        "longitude": 78.4867,
+        "accuracy": 150,
+        "timestamp": 1699123456789,
+        "sessionId": "123e4567-e89b-12d3-a456-426614174000"
+      },
+      "oldTimestamp": {
+        "busNumber": "12",
+        "latitude": 17.3850,
+        "longitude": 78.4867,
+        "accuracy": 10.5,
+        "timestamp": 1699120000000,
+        "sessionId": "123e4567-e89b-12d3-a456-426614174000"
+      }
+    }
+  },
+  "authentication": {
+    "tracker": {
+      "valid": {
+        "type": "tracker",
+        "busNumber": "12",
+        "sessionId": "123e4567-e89b-12d3-a456-426614174000"
+      },
+      "invalid": {
+        "missingSessionId": {
+          "type": "tracker",
+          "busNumber": "12"
+        },
+        "invalidBusNumber": {
+          "type": "tracker",
+          "busNumber": "999",
+          "sessionId": "123e4567-e89b-12d3-a456-426614174000"
+        }
+      }
+    },
+    "consumer": {
+      "valid": {
+        "type": "consumer",
+        "busNumber": "12",
+        "consumerId": "consumer-123"
+      },
+      "invalid": {
+        "missingConsumerId": {
+          "type": "consumer",
+          "busNumber": "12"
+        },
+        "invalidBusNumber": {
+          "type": "consumer",
+          "busNumber": "A99",
+          "consumerId": "consumer-123"
+        }
+      }
+    }
+  },
+  "busRoomOperations": {
+    "join": {
+      "busNumber": "12",
+      "consumerId": "consumer-123"
+    },
+    "leave": {
+      "busNumber": "12",
+      "consumerId": "consumer-123"
+    }
+  }
+}

@@ -39,3 +39,6 @@ export const validateDatabaseConfig = (config: any): boolean => {
   const requiredFields = ['url', 'serviceRoleKey'];
   return requiredFields.every(field => field in config && config[field]);
 };
+
+// Export environment management
+export * from './environment';

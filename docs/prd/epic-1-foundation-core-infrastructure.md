@@ -10,7 +10,7 @@
 **Acceptance Criteria:**
 1. React Native project initialized with proper folder structure and dependencies
 2. Node.js backend API with Express framework setup and basic routing
-3. Database (MongoDB) connection configured and tested
+3. Database (Supabase PostgreSQL) connection configured and tested
 4. Development environment supports hot reloading for both frontend and backend
 5. Git repository configured with proper .gitignore and initial commit structure
 6. Basic CI/CD pipeline established for automated testing and deployment

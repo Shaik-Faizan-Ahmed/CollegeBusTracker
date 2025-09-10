@@ -1,4 +1,15 @@
-import { ServerConfig, DEFAULT_SERVER_CONFIG } from '@cvr-bus-tracker/config';
+// Local types to avoid workspace dependency issues in production
+interface ServerConfig {
+  port: number;
+  nodeEnv: string;
+  corsOrigins: string[];
+}
+
+const DEFAULT_SERVER_CONFIG: ServerConfig = {
+  port: 3000,
+  nodeEnv: 'development',
+  corsOrigins: ['http://localhost:8081']
+};
 
 /**
  * Server configuration service that encapsulates environment variable access

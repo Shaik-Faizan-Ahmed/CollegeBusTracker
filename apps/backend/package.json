@@ -15,9 +15,6 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@cvr-bus-tracker/config": "1.0.0",
-    "@cvr-bus-tracker/shared-types": "1.0.0",
-    "@cvr-bus-tracker/utils": "1.0.0",
     "@sentry/node": "^10.10.0",
     "@sentry/tracing": "^7.120.4",
     "@supabase/supabase-js": "^2.38.0",

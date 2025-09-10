@@ -3,7 +3,12 @@
  * Provides environment-specific settings for the React Native app
  */
 
-import { getConfig, Environment, isDevelopment, isProduction } from '@cvr-bus-tracker/config';
+import {
+  getConfig,
+  Environment,
+  isDevelopment,
+  isProduction,
+} from '@cvr-bus-tracker/config';
 
 export interface MobileConfig {
   apiBaseUrl: string;
@@ -20,7 +25,7 @@ export interface MobileConfig {
  */
 export function getMobileConfig(): MobileConfig {
   const sharedConfig = getConfig();
-  
+
   return {
     apiBaseUrl: sharedConfig.API_BASE_URL,
     websocketUrl: sharedConfig.API_BASE_URL.replace(/^http/, 'ws'),
@@ -46,8 +51,8 @@ export const DEVELOPMENT_CONFIG: Partial<MobileConfig> = {
  * Production-specific configuration
  */
 export const PRODUCTION_CONFIG: Partial<MobileConfig> = {
-  apiBaseUrl: 'https://cvr-bus-tracker.onrender.com',
-  websocketUrl: 'wss://cvr-bus-tracker.onrender.com',
+  apiBaseUrl: 'https://collegebustracker.onrender.com',
+  websocketUrl: 'wss://collegebustracker.onrender.com',
   debug: false,
   logLevel: 'error',
 };
@@ -58,7 +63,7 @@ export const PRODUCTION_CONFIG: Partial<MobileConfig> = {
 export function getApiEndpoints() {
   const config = getMobileConfig();
   const baseUrl = config.apiBaseUrl;
-  
+
   return {
     health: `${baseUrl}/api/health`,
     buses: {

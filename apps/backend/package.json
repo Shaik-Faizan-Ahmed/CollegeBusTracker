@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "description": "CVR Bus Tracker Backend API",
-  "main": "src/server.ts",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "build": "echo 'Build complete - running with ts-node'",
-    "build:production": "echo 'Production build complete - running with ts-node'",
-    "start": "npx ts-node --transpile-only src/server.ts",
-    "start:js": "node dist/server.js",
+    "build": "echo 'Build complete - using JavaScript version'",
+    "build:production": "echo 'Production build complete - using JavaScript version'",
+    "start": "node server.js",
+    "start:ts": "npx ts-node --transpile-only src/server.ts",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
     "clean": "rm -rf dist"

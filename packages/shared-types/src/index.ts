@@ -171,10 +171,13 @@ export type ScreenNames = keyof RootStackParamList;
 
 // Consumer Tracking Types
 export interface BusLocation {
+  busNumber: string;
   latitude: number;
   longitude: number;
   accuracy: number;
   timestamp: Date;
+  lastUpdated: Date;
+  isActive: boolean;
 }
 
 export interface ConsumerTrackingState {
@@ -202,3 +205,109 @@ export interface BusRoom {
   lastUpdate: Date;
   isActive: boolean;
 }
+
+// Session Management Types for Story 3.2
+export interface SessionState {
+  id: string | null;
+  busNumber: string | null;
+  isActive: boolean;
+  isPaused: boolean;
+  status: 'idle' | 'starting' | 'active' | 'paused' | 'ending' | 'timeout';
+  startTime: Date | null;
+  lastActivity: Date | null;
+  transmissionCount: number;
+  lastTransmissionTime: Date | null;
+  persistedData: SessionPersistedData | null;
+}
+
+export interface BatteryOptimizationState {
+  isOptimized: boolean;
+  currentUsage: number; // percentage per hour
+  warningThreshold: number; // percentage threshold
+  recommendationsShown: boolean;
+  lowBatteryMode: boolean;
+  lastBatteryCheck: Date | null;
+}
+
+export interface SessionPersistedData {
+  sessionId: string;
+  busNumber: string;
+  startTime: Date;
+  isActive: boolean;
+  isPaused: boolean;
+  lastLocation: {
+    latitude: number;
+    longitude: number;
+    timestamp: Date;
+  } | null;
+  transmissionCount: number;
+}
+
+export interface SessionHeartbeat {
+  sessionId: string;
+  timestamp: Date;
+  batteryLevel?: number;
+  networkStatus: string;
+}
+
+// Performance Optimization Types for Story 3.3
+export interface PerformanceState {
+  cpuUsage: number;
+  memoryUsage: number;
+  batteryLevel: number;
+  networkSpeed: number;
+  renderFPS: number;
+  appLaunchTime: number;
+  isPerformanceModeEnabled: boolean;
+}
+
+export interface MemoryState {
+  totalMemory: number;
+  usedMemory: number;
+  availableMemory: number;
+  memoryWarningLevel: 'low' | 'medium' | 'high' | 'critical';
+  lastMemoryCleanup: Date | null;
+  cacheSize: number;
+}
+
+export interface DataUsageState {
+  bytesTransmitted: number;
+  bytesReceived: number;
+  isDataSaverEnabled: boolean;
+  networkType: 'wifi' | 'cellular' | 'unknown';
+  compressionEnabled: boolean;
+  lastDataReset: Date;
+}
+
+export interface CompressedLocationUpdate {
+  b: string;  // busNumber (shortened key)
+  lat: number;
+  lng: number;
+  acc: number; // accuracy
+  ts: number;  // timestamp
+  sid: string; // sessionId
+}
+
+export interface PerformanceMetric {
+  name: string;
+  value: number;
+  timestamp: Date;
+  category: 'memory' | 'battery' | 'network' | 'rendering' | 'startup';
+}
+
+export interface LocationUpdateConfig {
+  highAccuracyInterval: number;    // 10 seconds
+  balancedInterval: number;        // 30 seconds  
+  backgroundInterval: number;      // 60 seconds
+  distanceFilter: number;          // meters
+  enableHighAccuracy: boolean;
+  timeout: number;                 // 15 seconds
+}
+
+// Session Storage Keys
+export const SESSION_STORAGE_KEYS = {
+  ACTIVE_SESSION: 'active_tracking_session',
+  SESSION_HISTORY: 'session_history_log',
+  BATTERY_SETTINGS: 'battery_optimization_settings',
+  TIMEOUT_PREFERENCES: 'session_timeout_preferences'
+} as const;

@@ -100,8 +100,18 @@ app.post('/api/tracker/start', async (req, res) => {
   try {
     const { busNumber, latitude, longitude } = req.body;
     
+    console.log('🔍 Tracker start request:', { busNumber, latitude, longitude, body: req.body });
+    
     if (!busNumber || latitude === undefined || longitude === undefined) {
-      return res.status(400).json({ error: 'Missing required fields' });
+      console.log('❌ Missing required fields:', { 
+        busNumber: busNumber || 'missing', 
+        latitude: latitude !== undefined ? latitude : 'missing',
+        longitude: longitude !== undefined ? longitude : 'missing'
+      });
+      return res.status(400).json({ 
+        error: 'Missing required fields',
+        received: { busNumber, latitude, longitude }
+      });
     }
     
     // Check if bus already has an active tracker

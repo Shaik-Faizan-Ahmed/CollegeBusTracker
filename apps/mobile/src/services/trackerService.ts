@@ -1,71 +1,79 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { apiClient } from './api';
-import { BusSession, TrackingSession, Location } from '@cvr-bus-tracker/shared-types';
+import {io, Socket} from 'socket.io-client';
+import {apiClient} from './api';
+import {getMobileConfig} from '../config/environment';
+import {
+  TrackingSession,
+  Location,
+  StartTrackerResponse,
+} from '@cvr-bus-tracker/shared-types';
 
 const STORAGE_KEYS = {
   TRACKING_SESSION: 'cvr_bus_tracker_session',
-  SESSION_ID: 'cvr_bus_tracker_session_id',
 };
-
-export interface StartTrackerRequest {
-  busNumber: string;
-  latitude: number;
-  longitude: number;
-}
-
-export interface StartTrackerResponse {
-  sessionId: string;
-  busNumber: string;
-  trackerId: string;
-}
-
-export interface StopTrackerResponse {
-  message: string;
-  busNumber: string;
-}
-
-export interface TrackerConflictError {
-  code: 'BUS_ALREADY_TRACKED';
-  message: string;
-  existingTracker: {
-    busNumber: string;
-    lastUpdated: Date;
-    trackerId: string;
-  };
-}
 
 export class TrackerService {
   private currentSession: TrackingSession | null = null;
   private locationUpdateInterval: NodeJS.Timeout | null = null;
+  private socket: Socket | null = null;
 
   constructor() {
     this.loadStoredSession();
   }
 
-  /**
-   * Start a new tracking session
-   */
+  private initializeSocket() {
+    if (this.socket?.connected || !this.currentSession) {
+      return;
+    }
+
+    const config = getMobileConfig();
+    console.log(`Attempting to connect to socket at ${config.apiBaseUrl}`);
+
+    // Disconnect any existing socket before creating a new one
+    if (this.socket) {
+      this.socket.disconnect();
+    }
+
+    this.socket = io(config.apiBaseUrl, {
+      reconnection: true,
+      reconnectionAttempts: 5,
+      reconnectionDelay: 2000,
+      transports: ['websocket'], // Explicitly use websockets
+    });
+
+    this.socket.on('connect', () => {
+      console.log('WebSocket connected successfully:', this.socket?.id);
+    });
+
+    this.socket.on('disconnect', reason => {
+      console.log('WebSocket disconnected:', reason);
+    });
+
+    this.socket.on('connect_error', error => {
+      console.error('WebSocket connection error:', error.message);
+    });
+  }
+
+  private disconnectSocket() {
+    if (this.socket) {
+      this.socket.disconnect();
+      this.socket = null;
+      console.log('WebSocket disconnected.');
+    }
+  }
+
   async startTracking(
     busNumber: string,
-    location: Location
+    location: Location,
   ): Promise<StartTrackerResponse> {
     try {
-      const request: StartTrackerRequest = {
-        busNumber,
-        latitude: location.latitude,
-        longitude: location.longitude,
-      };
-
       const response = await apiClient.post<StartTrackerResponse>(
         '/tracker/start',
-        request
+        {busNumber, ...location},
       );
 
-      // Create and store tracking session
       const session: TrackingSession = {
-        sessionId: response.sessionId,
-        busNumber: response.busNumber,
-        trackerId: response.trackerId,
+        ...response,
         startedAt: new Date(),
         isActive: true,
       };
@@ -73,128 +81,110 @@ export class TrackerService {
       await this.storeSession(session);
       this.currentSession = session;
 
+      this.initializeSocket();
+
       return response;
     } catch (error) {
-      if (error instanceof Error && error.message.includes('already has an active tracker')) {
-        // This is a conflict error (409)
+      if (
+        error instanceof Error &&
+        error.message.includes('already has an active tracker')
+      ) {
         throw new Error('BUS_ALREADY_TRACKED');
       }
       throw error;
     }
   }
 
-  /**
-   * Stop the current tracking session
-   */
   async stopTracking(): Promise<void> {
     if (!this.currentSession) {
       throw new Error('No active tracking session');
     }
 
     try {
-      await apiClient.post<StopTrackerResponse>(
-        '/tracker/stop',
-        {},
+      await apiClient.post('/tracker/stop', {},
         {
           'x-session-id': this.currentSession.sessionId,
-        }
+        },
       );
-
-      // Clear stored session
-      await this.clearSession();
-      this.currentSession = null;
-
-      // Clear location update interval if running
+    } catch(e) {
+        console.error("Failed to stop tracker on server", e)
+    } finally {
+      this.disconnectSocket();
       if (this.locationUpdateInterval) {
         clearInterval(this.locationUpdateInterval);
         this.locationUpdateInterval = null;
       }
-    } catch (error) {
-      // Even if API call fails, clear local session
       await this.clearSession();
       this.currentSession = null;
-      throw error;
     }
   }
 
-  /**
-   * Update tracker location (for manual updates)
-   */
-  async updateLocation(location: Location): Promise<void> {
-    if (!this.currentSession) {
-      throw new Error('No active tracking session');
-    }
-
-    try {
-      await apiClient.post(
-        '/tracker/update',
+  updateLocation(location: Location): void {
+    if (!this.currentSession || !this.socket || !this.socket.connected) {
+      console.error(
+        'Cannot update location: no session or socket not connected.',
         {
-          latitude: location.latitude,
-          longitude: location.longitude,
-          accuracy: location.accuracy,
-          timestamp: location.timestamp,
+          hasSession: !!this.currentSession,
+          hasSocket: !!this.socket,
+          isConnected: this.socket?.connected,
         },
-        {
-          'x-session-id': this.currentSession.sessionId,
-        }
       );
-    } catch (error) {
-      console.error('Failed to update tracker location:', error);
-      throw error;
+      // Attempt to re-initialize socket if we have a session but socket is not connected
+      if (this.currentSession && (!this.socket || !this.socket.connected)) {
+        this.initializeSocket();
+      }
+      return;
     }
+
+    const payload = {
+      sessionId: this.currentSession.sessionId,
+      busNumber: this.currentSession.busNumber,
+      latitude: location.latitude,
+      longitude: location.longitude,
+      accuracy: location.accuracy,
+      timestamp: location.timestamp,
+    };
+
+    this.socket.emit('location-update', payload);
   }
 
-  /**
-   * Get current tracking session
-   */
   getCurrentSession(): TrackingSession | null {
     return this.currentSession;
   }
 
-  /**
-   * Check if currently tracking
-   */
   isTracking(): boolean {
     return this.currentSession?.isActive ?? false;
   }
 
-  /**
-   * Get current bus number being tracked
-   */
   getCurrentBusNumber(): string | null {
     return this.currentSession?.busNumber ?? null;
   }
 
-  /**
-   * Start location update interval (10-15 seconds)
-   */
   startLocationUpdates(
     locationProvider: () => Promise<Location>,
-    intervalMs: number = 12000 // 12 seconds
+    intervalMs: number = 12000,
   ): void {
     if (!this.currentSession) {
       throw new Error('No active tracking session');
     }
 
-    // Clear existing interval
     if (this.locationUpdateInterval) {
       clearInterval(this.locationUpdateInterval);
     }
 
-    this.locationUpdateInterval = setInterval(async () => {
+    const getLocationAndUpdate = async () => {
       try {
         const location = await locationProvider();
-        await this.updateLocation(location);
+        this.updateLocation(location);
       } catch (error) {
-        console.error('Location update failed:', error);
-        // Continue trying updates, don't stop the interval
+        console.error('Location provider failed:', error);
       }
-    }, intervalMs);
+    };
+
+    getLocationAndUpdate();
+    this.locationUpdateInterval = setInterval(getLocationAndUpdate, intervalMs);
   }
 
-  /**
-   * Stop location updates
-   */
   stopLocationUpdates(): void {
     if (this.locationUpdateInterval) {
       clearInterval(this.locationUpdateInterval);
@@ -202,74 +192,57 @@ export class TrackerService {
     }
   }
 
-  /**
-   * Store session in AsyncStorage
-   */
   private async storeSession(session: TrackingSession): Promise<void> {
     try {
-      await AsyncStorage.multiSet([
-        [STORAGE_KEYS.TRACKING_SESSION, JSON.stringify(session)],
-        [STORAGE_KEYS.SESSION_ID, session.sessionId],
-      ]);
+      await AsyncStorage.setItem(
+        STORAGE_KEYS.TRACKING_SESSION,
+        JSON.stringify(session),
+      );
     } catch (error) {
       console.error('Failed to store tracking session:', error);
     }
   }
 
-  /**
-   * Load session from AsyncStorage
-   */
   private async loadStoredSession(): Promise<void> {
     try {
-      const sessionData = await AsyncStorage.getItem(STORAGE_KEYS.TRACKING_SESSION);
+      const sessionData = await AsyncStorage.getItem(
+        STORAGE_KEYS.TRACKING_SESSION,
+      );
       if (sessionData) {
         const session: TrackingSession = JSON.parse(sessionData);
-        // Validate session is still active (not expired)
         const now = new Date();
         const sessionAge = now.getTime() - new Date(session.startedAt).getTime();
         const maxAge = 24 * 60 * 60 * 1000; // 24 hours
 
         if (sessionAge < maxAge && session.isActive) {
           this.currentSession = session;
+          this.initializeSocket();
         } else {
-          // Session expired, clear it
           await this.clearSession();
         }
       }
     } catch (error) {
       console.error('Failed to load stored session:', error);
-      // Clear corrupted data
       await this.clearSession();
     }
   }
 
-  /**
-   * Clear stored session
-   */
   private async clearSession(): Promise<void> {
     try {
-      await AsyncStorage.multiRemove([
-        STORAGE_KEYS.TRACKING_SESSION,
-        STORAGE_KEYS.SESSION_ID,
-      ]);
+      await AsyncStorage.removeItem(STORAGE_KEYS.TRACKING_SESSION);
     } catch (error) {
       console.error('Failed to clear session:', error);
     }
   }
 
-  /**
-   * Handle app background/foreground transitions
-   */
   handleAppStateChange(newState: string): void {
-    if (newState === 'background' && this.isTracking()) {
-      // Continue location updates in background
-      console.log('App backgrounded, continuing location updates');
-    } else if (newState === 'active' && this.isTracking()) {
-      // App returned to foreground, ensure updates are still running
-      console.log('App foregrounded, verifying location updates');
+    if (newState === 'active' && this.isTracking()) {
+      if (!this.socket || !this.socket.connected) {
+        console.log('App foregrounded, re-establishing socket connection...');
+        this.initializeSocket();
+      }
     }
   }
 }
 
-// Singleton instance
 export const trackerService = new TrackerService();

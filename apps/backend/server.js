@@ -37,11 +37,7 @@ const io = new Server(server, {
   }
 });
 
-// In-memory storage for active sessions
-const activeSessions = new Map();
-const busRooms = new Map();
-
-// Health check endpoint
+// --- Health check endpoint ---
 app.get('/health', (req, res) => {
   res.json({ 
     status: 'ok', 
@@ -59,17 +55,17 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Bus routes
+// --- Bus routes ---
 app.get('/api/buses', async (req, res) => {
   try {
-    const activeBuses = Array.from(activeSessions.values()).map(session => ({
-      busNumber: session.busNumber,
-      latitude: session.latitude,
-      longitude: session.longitude,
-      lastUpdated: session.lastUpdated
-    }));
+    const { data, error } = await supabase
+      .from('active_sessions')
+      .select('busNumber, latitude, longitude, lastUpdated')
+      .eq('isActive', true);
+
+    if (error) throw error;
     
-    res.json({ buses: activeBuses });
+    res.json({ buses: data });
   } catch (error) {
     console.error('Error fetching buses:', error);
     res.status(500).json({ error: 'Failed to fetch buses' });
@@ -79,36 +75,46 @@ app.get('/api/buses', async (req, res) => {
 app.get('/api/buses/:busNumber', async (req, res) => {
   try {
     const { busNumber } = req.params;
-    const session = Array.from(activeSessions.values()).find(s => s.busNumber === busNumber);
-    
-    if (!session) {
-      return res.status(404).json({ error: 'Bus not found or not active' });
+    const { data, error } = await supabase
+      .from('active_sessions')
+      .select('busNumber, latitude, longitude, lastUpdated')
+      .eq('busNumber', busNumber)
+      .eq('isActive', true)
+      .limit(1)
+      .single();
+
+    if (error) {
+      if (error.code === 'PGRST116') return res.status(404).json({ error: 'Bus not found or not active' });
+      throw error;
     }
     
-    res.json({
-      busNumber: session.busNumber,
-      latitude: session.latitude,
-      longitude: session.longitude,
-      lastUpdated: session.lastUpdated
-    });
+    res.json(data);
   } catch (error) {
     console.error('Error fetching bus:', error);
     res.status(500).json({ error: 'Failed to fetch bus' });
   }
 });
 
-// Tracker routes
+// --- Tracker routes ---
 app.post('/api/tracker/start', async (req, res) => {
   try {
     const { busNumber, latitude, longitude } = req.body;
     
-    if (!busNumber || !latitude || !longitude) {
+    if (!busNumber || latitude === undefined || longitude === undefined) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
     
     // Check if bus already has an active tracker
-    const existingSession = Array.from(activeSessions.values()).find(s => s.busNumber === busNumber);
-    
+    const { data: existingSession, error: selectError } = await supabase
+      .from('active_sessions')
+      .select('*')
+      .eq('busNumber', busNumber)
+      .eq('isActive', true)
+      .limit(1)
+      .single();
+
+    if (selectError && selectError.code !== 'PGRST116') throw selectError;
+
     if (existingSession) {
       return res.status(409).json({
         error: {
@@ -126,19 +132,21 @@ app.post('/api/tracker/start', async (req, res) => {
     // Create new session
     const sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     const trackerId = `tracker_${Math.random().toString(36).substr(2, 9)}`;
-    
-    const newSession = {
-      sessionId,
-      busNumber,
-      trackerId,
-      latitude: parseFloat(latitude),
-      longitude: parseFloat(longitude),
-      isActive: true,
-      lastUpdated: new Date().toISOString(),
-      expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString() // 24 hours
-    };
-    
-    activeSessions.set(sessionId, newSession);
+    const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+
+    const { error: insertError } = await supabase
+      .from('active_sessions')
+      .insert({
+        sessionId,
+        busNumber,
+        trackerId,
+        latitude: parseFloat(latitude),
+        longitude: parseFloat(longitude),
+        isActive: true,
+        expiresAt
+      });
+
+    if (insertError) throw insertError;
     
     res.status(201).json({
       sessionId,
@@ -152,23 +160,23 @@ app.post('/api/tracker/start', async (req, res) => {
   }
 });
 
-app.post('/api/tracker/stop', (req, res) => {
+app.post('/api/tracker/stop', async (req, res) => {
   try {
     const sessionId = req.headers['x-session-id'];
+    if (!sessionId) return res.status(400).json({ error: 'Session ID required' });
     
-    if (!sessionId) {
-      return res.status(400).json({ error: 'Session ID required' });
+    const { data: session, error: deleteError } = await supabase
+      .from('active_sessions')
+      .delete()
+      .eq('sessionId', sessionId)
+      .select()
+      .single();
+
+    if (deleteError) {
+        if (deleteError.code === 'PGRST116') return res.status(404).json({ error: 'Session not found' });
+        throw deleteError;
     }
-    
-    const session = activeSessions.get(sessionId);
-    
-    if (!session) {
-      return res.status(404).json({ error: 'Session not found' });
-    }
-    
-    // Remove session
-    activeSessions.delete(sessionId);
-    
+
     // Notify consumers that tracker stopped
     io.to(`bus-${session.busNumber}`).emit('tracker-disconnected', {
       busNumber: session.busNumber,
@@ -186,26 +194,33 @@ app.post('/api/tracker/stop', (req, res) => {
   }
 });
 
-// WebSocket connection handling
+// --- WebSocket connection handling ---
 io.on('connection', (socket) => {
   console.log('📱 Client connected:', socket.id);
   
-  // Handle location updates from trackers
-  socket.on('location-update', (data) => {
+  socket.on('location-update', async (data) => {
     try {
       const { busNumber, latitude, longitude, accuracy, timestamp, sessionId } = data;
       
-      // Verify session exists
-      const session = activeSessions.get(sessionId);
-      if (!session) {
-        socket.emit('error', { message: 'Invalid session' });
-        return;
+      const { error } = await supabase
+        .from('active_sessions')
+        .update({
+          latitude: parseFloat(latitude),
+          longitude: parseFloat(longitude),
+          lastUpdated: new Date().toISOString()
+        })
+        .eq('sessionId', sessionId);
+
+      if (error) {
+        // If the session doesn't exist, the update will fail silently (0 rows updated).
+        // We need to check if the session exists first to return a specific error.
+        const { data: sessionExists } = await supabase.from('active_sessions').select('sessionId').eq('sessionId', sessionId).single();
+        if (!sessionExists) {
+            socket.emit('error', { message: 'Invalid session' });
+            return;
+        }
+        throw error;
       }
-      
-      // Update session location
-      session.latitude = parseFloat(latitude);
-      session.longitude = parseFloat(longitude);
-      session.lastUpdated = new Date().toISOString();
       
       // Broadcast to consumers in this bus room
       socket.to(`bus-${busNumber}`).emit('location-updated', {
@@ -215,27 +230,30 @@ io.on('connection', (socket) => {
         accuracy: parseFloat(accuracy),
         timestamp
       });
-      
+
     } catch (error) {
       console.error('Error handling location update:', error);
       socket.emit('error', { message: 'Failed to process location update' });
     }
   });
   
-  // Handle consumers joining bus rooms
-  socket.on('join-bus-room', (data) => {
+  socket.on('join-bus-room', async (data) => {
     try {
       const { busNumber } = data;
-      
-      if (!busNumber) {
-        socket.emit('error', { message: 'Bus number required' });
-        return;
-      }
+      if (!busNumber) return socket.emit('error', { message: 'Bus number required' });
       
       socket.join(`bus-${busNumber}`);
       
-      // Send current location if available
-      const session = Array.from(activeSessions.values()).find(s => s.busNumber === busNumber);
+      const { data: session, error } = await supabase
+        .from('active_sessions')
+        .select('busNumber, latitude, longitude, lastUpdated')
+        .eq('busNumber', busNumber)
+        .eq('isActive', true)
+        .limit(1)
+        .single();
+
+      if (error && error.code !== 'PGRST116') throw error;
+
       if (session) {
         socket.emit('location-updated', {
           busNumber: session.busNumber,
@@ -253,29 +271,33 @@ io.on('connection', (socket) => {
     }
   });
   
-  // Handle disconnection
   socket.on('disconnect', () => {
     console.log('📱 Client disconnected:', socket.id);
   });
 });
 
-// Cleanup expired sessions every 5 minutes
-setInterval(() => {
-  const now = new Date();
-  for (const [sessionId, session] of activeSessions.entries()) {
-    if (new Date(session.expiresAt) < now) {
-      console.log(`🧹 Cleaning up expired session: ${sessionId}`);
-      activeSessions.delete(sessionId);
-    }
-  }
-}, 5 * 60 * 1000);
+// --- Database cleanup ---
+async function cleanupExpiredSessions() {
+    const now = new Date().toISOString();
+    const { error } = await supabase
+        .from('active_sessions')
+        .delete()
+        .lt('expiresAt', now);
 
-// Start server
+    if (error) {
+        console.error('Error cleaning up expired sessions:', error);
+    }
+}
+
+setInterval(cleanupExpiredSessions, 5 * 60 * 1000); // Run every 5 minutes
+
+// --- Start server ---
 server.listen(PORT, () => {
   console.log('🚀 CVR Bus Tracker API Server running on port', PORT);
   console.log('📱 Environment:', NODE_ENV);
   console.log('🔌 WebSocket server ready');
   console.log('✅ Database connected successfully');
+  cleanupExpiredSessions(); // Initial cleanup on start
 });
 
 module.exports = app;

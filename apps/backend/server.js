@@ -194,6 +194,30 @@ app.post('/api/tracker/stop', async (req, res) => {
   }
 });
 
+// --- Debug route to clear ghost sessions (temporary) ---
+app.delete('/api/tracker/clear/:busNumber', async (req, res) => {
+  try {
+    const { busNumber } = req.params;
+    
+    const { data: sessions, error: deleteError } = await supabase
+      .from('active_sessions')
+      .delete()
+      .eq('busNumber', busNumber)
+      .select();
+
+    if (deleteError) throw deleteError;
+
+    res.json({
+      message: `Cleared ${sessions.length} session(s) for bus ${busNumber}`,
+      clearedSessions: sessions.length
+    });
+    
+  } catch (error) {
+    console.error('Error clearing sessions:', error);
+    res.status(500).json({ error: 'Failed to clear sessions' });
+  }
+});
+
 // --- WebSocket connection handling ---
 io.on('connection', (socket) => {
   console.log('📱 Client connected:', socket.id);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   View,
   Text,
@@ -9,12 +9,12 @@ import {
   Alert,
   ActivityIndicator,
 } from 'react-native';
-import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import {useNavigation, useRoute, RouteProp} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import KeepAwake from 'react-native-keep-awake';
-import { RootStackParamList } from '@cvr-bus-tracker/shared-types';
-import { useAppStore } from '../../store';
-import { TrackerStatus, StopTrackingButton, TrackerConflict } from './components';
+import {RootStackParamList} from '@cvr-bus-tracker/shared-types';
+import {useAppStore} from '../../store';
+import {TrackerStatus, StopTrackingButton, TrackerConflict} from './components';
 
 type BecomeTrackerScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -30,7 +30,9 @@ export const BecomeTrackerScreen: React.FC = () => {
   const navigation = useNavigation<BecomeTrackerScreenNavigationProp>();
   const route = useRoute<BecomeTrackerScreenRouteProp>();
   const [showConflict, setShowConflict] = useState(false);
-  const [conflictBusNumber, setConflictBusNumber] = useState<string | null>(null);
+  const [conflictBusNumber, setConflictBusNumber] = useState<string | null>(
+    null,
+  );
 
   const {
     // State
@@ -72,18 +74,14 @@ export const BecomeTrackerScreen: React.FC = () => {
   }, [trackerError, busNumber, setTrackerError]);
 
   const handleStartTracking = async () => {
-    if (!busNumber) {
-      Alert.alert(
-        'No Bus Selected',
-        'Please select a bus number to track.',
-        [
-          {
-            text: 'Select Bus',
-            onPress: () => navigation.navigate('BusSelector', { mode: 'tracker' }),
-          },
-          { text: 'Cancel' },
-        ]
-      );
+    if (!busNumber || busNumber.trim() === '') {
+      Alert.alert('No Bus Selected', 'Please select a bus number to track.', [
+        {
+          text: 'Select Bus',
+          onPress: () => navigation.navigate('BusSelector', {mode: 'tracker'}),
+        },
+        {text: 'Cancel'},
+      ]);
       return;
     }
 
@@ -97,8 +95,10 @@ export const BecomeTrackerScreen: React.FC = () => {
       } else {
         Alert.alert(
           'Tracking Failed',
-          error instanceof Error ? error.message : 'Unable to start tracking. Please try again.',
-          [{ text: 'OK' }]
+          error instanceof Error
+            ? error.message
+            : 'Unable to start tracking. Please try again.',
+          [{text: 'OK'}],
         );
       }
     }
@@ -116,7 +116,7 @@ export const BecomeTrackerScreen: React.FC = () => {
 
   const handleTryDifferentBus = () => {
     setShowConflict(false);
-    navigation.navigate('BusSelector', { mode: 'tracker' });
+    navigation.navigate('BusSelector', {mode: 'tracker'});
   };
 
   const handleRetryTracking = () => {
@@ -132,7 +132,7 @@ export const BecomeTrackerScreen: React.FC = () => {
         'Stop Tracking?',
         'Going back will stop location tracking. Continue?',
         [
-          { text: 'Cancel', style: 'cancel' },
+          {text: 'Cancel', style: 'cancel'},
           {
             text: 'Go Back',
             onPress: async () => {
@@ -145,7 +145,7 @@ export const BecomeTrackerScreen: React.FC = () => {
               }
             },
           },
-        ]
+        ],
       );
     } else {
       navigation.navigate('Home');
@@ -185,7 +185,9 @@ export const BecomeTrackerScreen: React.FC = () => {
           <View style={styles.loadingContainer}>
             <ActivityIndicator size="large" color="#3498db" />
             <Text style={styles.loadingText}>
-              {trackerStatus === 'starting' ? 'Starting tracking...' : 'Stopping tracking...'}
+              {trackerStatus === 'starting'
+                ? 'Starting tracking...'
+                : 'Stopping tracking...'}
             </Text>
           </View>
         )}
@@ -196,14 +198,15 @@ export const BecomeTrackerScreen: React.FC = () => {
             <TouchableOpacity
               style={[
                 styles.startButton,
-                (trackerStatus === 'starting') && styles.buttonDisabled,
+                trackerStatus === 'starting' && styles.buttonDisabled,
               ]}
               onPress={handleStartTracking}
               disabled={trackerStatus === 'starting'}
-              testID="start-tracking-button"
-            >
+              testID="start-tracking-button">
               <Text style={styles.startButtonText}>
-                {trackerStatus === 'starting' ? 'Starting...' : 'Become Tracker'}
+                {trackerStatus === 'starting'
+                  ? 'Starting...'
+                  : 'Become Tracker'}
               </Text>
             </TouchableOpacity>
           ) : (
@@ -218,9 +221,10 @@ export const BecomeTrackerScreen: React.FC = () => {
           {!busNumber && (
             <TouchableOpacity
               style={styles.selectBusButton}
-              onPress={() => navigation.navigate('BusSelector', { mode: 'tracker' })}
-              testID="select-bus-button"
-            >
+              onPress={() =>
+                navigation.navigate('BusSelector', {mode: 'tracker'})
+              }
+              testID="select-bus-button">
               <Text style={styles.selectBusButtonText}>Select Bus Number</Text>
             </TouchableOpacity>
           )}
@@ -246,8 +250,7 @@ export const BecomeTrackerScreen: React.FC = () => {
         <TouchableOpacity
           style={styles.backButton}
           onPress={handleGoBack}
-          testID="back-button"
-        >
+          testID="back-button">
           <Text style={styles.backButtonText}>← Back to Home</Text>
         </TouchableOpacity>
       </View>

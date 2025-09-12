@@ -99,23 +99,83 @@ app.get('/api/buses/:busNumber', async (req, res) => {
 // --- Tracker routes ---
 app.post('/api/tracker/start', async (req, res) => {
   try {
-    const { busNumber, latitude, longitude } = req.body;
+    const { busNumber, latitude, longitude, accuracy, timestamp } = req.body;
     
-    console.log('🔍 Tracker start request:', { busNumber, latitude, longitude, body: req.body });
+    console.log('🔍 Tracker start request:', { 
+      busNumber, 
+      latitude, 
+      longitude, 
+      accuracy, 
+      timestamp, 
+      body: req.body,
+      bodyType: typeof req.body,
+      latType: typeof latitude,
+      lngType: typeof longitude
+    });
     
-    if (!busNumber || latitude === undefined || longitude === undefined) {
-      console.log('❌ Missing required fields:', { 
-        busNumber: busNumber || 'missing', 
-        latitude: latitude !== undefined ? latitude : 'missing',
-        longitude: longitude !== undefined ? longitude : 'missing'
-      });
+    // Validate required fields
+    if (!busNumber) {
+      console.log('❌ Missing busNumber');
       return res.status(400).json({ 
-        error: 'Missing required fields',
-        received: { busNumber, latitude, longitude }
+        error: 'Missing required field: busNumber',
+        received: { busNumber, latitude, longitude, accuracy, timestamp }
       });
     }
     
-    // Check if bus already has an active tracker
+    if (latitude === undefined || latitude === null) {
+      console.log('❌ Missing latitude');
+      return res.status(400).json({ 
+        error: 'Missing required field: latitude',
+        received: { busNumber, latitude, longitude, accuracy, timestamp }
+      });
+    }
+    
+    if (longitude === undefined || longitude === null) {
+      console.log('❌ Missing longitude');
+      return res.status(400).json({ 
+        error: 'Missing required field: longitude',
+        received: { busNumber, latitude, longitude, accuracy, timestamp }
+      });
+    }
+    
+    // Convert to numbers if they're strings
+    const lat = typeof latitude === 'string' ? parseFloat(latitude) : latitude;
+    const lng = typeof longitude === 'string' ? parseFloat(longitude) : longitude;
+    
+    // Validate coordinate values
+    if (isNaN(lat) || isNaN(lng)) {
+      console.log('❌ Invalid coordinates:', { lat, lng });
+      return res.status(400).json({ 
+        error: 'Invalid coordinates: latitude and longitude must be valid numbers',
+        received: { busNumber, latitude, longitude, accuracy, timestamp }
+      });
+    }
+    
+    // Validate coordinate ranges
+    if (lat < -90 || lat > 90 || lng < -180 || lng > 180) {
+      console.log('❌ Coordinates out of range:', { lat, lng });
+      return res.status(400).json({ 
+        error: 'Coordinates out of valid range',
+        received: { busNumber, latitude, longitude, accuracy, timestamp }
+      });
+    }
+    
+    // First, clean up any expired sessions for this bus (older than 2 hours)
+    const twoHoursAgo = new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString();
+    console.log(`🧹 Cleaning up sessions older than: ${twoHoursAgo}`);
+    
+    const { data: expiredSessions } = await supabase
+      .from('active_sessions')
+      .delete()
+      .eq('busNumber', busNumber)
+      .lt('lastUpdated', twoHoursAgo)
+      .select();
+      
+    if (expiredSessions?.length > 0) {
+      console.log(`🧹 Cleaned up ${expiredSessions.length} expired session(s) for bus ${busNumber}`);
+    }
+    
+    // Now check if bus still has an active tracker
     const { data: existingSession, error: selectError } = await supabase
       .from('active_sessions')
       .select('*')
@@ -151,8 +211,9 @@ app.post('/api/tracker/start', async (req, res) => {
         sessionId,
         busNumber,
         trackerId,
-        latitude: parseFloat(latitude),
-        longitude: parseFloat(longitude),
+        latitude: lat,
+        longitude: lng,
+        accuracy: accuracy || 10.0,
         isActive: true,
         expiresAt
       });
@@ -205,7 +266,7 @@ app.post('/api/tracker/stop', async (req, res) => {
   }
 });
 
-// --- Debug route to clear ghost sessions (temporary) ---
+// --- Debug routes to clear ghost sessions (temporary) ---
 app.delete('/api/tracker/clear/:busNumber', async (req, res) => {
   try {
     const { busNumber } = req.params;
@@ -226,6 +287,53 @@ app.delete('/api/tracker/clear/:busNumber', async (req, res) => {
   } catch (error) {
     console.error('Error clearing sessions:', error);
     res.status(500).json({ error: 'Failed to clear sessions' });
+  }
+});
+
+// Clear all expired sessions (older than 24 hours)
+app.post('/api/debug/clear-expired-sessions', async (req, res) => {
+  try {
+    const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+    
+    const { data: expiredSessions, error: deleteError } = await supabase
+      .from('active_sessions')
+      .delete()
+      .lt('lastUpdated', twentyFourHoursAgo)
+      .select();
+
+    if (deleteError) throw deleteError;
+
+    res.json({
+      message: `Cleared ${expiredSessions?.length || 0} expired session(s)`,
+      clearedSessions: expiredSessions?.length || 0,
+      cutoffTime: twentyFourHoursAgo
+    });
+    
+  } catch (error) {
+    console.error('Error clearing expired sessions:', error);
+    res.status(500).json({ error: 'Failed to clear expired sessions' });
+  }
+});
+
+// Clear all sessions (use with caution!)
+app.post('/api/debug/clear-all-sessions', async (req, res) => {
+  try {
+    const { data: allSessions, error: deleteError } = await supabase
+      .from('active_sessions')
+      .delete()
+      .neq('sessionId', '') // Delete all non-empty sessionIds (i.e., all records)
+      .select();
+
+    if (deleteError) throw deleteError;
+
+    res.json({
+      message: `Cleared all ${allSessions?.length || 0} session(s)`,
+      clearedSessions: allSessions?.length || 0
+    });
+    
+  } catch (error) {
+    console.error('Error clearing all sessions:', error);
+    res.status(500).json({ error: 'Failed to clear all sessions' });
   }
 });
 

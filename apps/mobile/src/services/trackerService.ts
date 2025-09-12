@@ -34,7 +34,7 @@ export class TrackerService {
       this.socket.disconnect();
     }
 
-    this.socket = io(config.apiBaseUrl, {
+    this.socket = io(config.websocketUrl, {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 2000,
@@ -67,9 +67,28 @@ export class TrackerService {
     location: Location,
   ): Promise<StartTrackerResponse> {
     try {
+      // Debug: Log what we're about to send
+      const payload = {busNumber, ...location};
+      console.log('🚌 TrackerService.startTracking called with:');
+      console.log('🚌 busNumber:', busNumber);
+      console.log('🚌 location:', location);
+      console.log('🚌 payload to send:', payload);
+      console.log('🚌 payload JSON:', JSON.stringify(payload));
+      
+      // Validate payload before sending
+      if (!busNumber) {
+        throw new Error('Bus number is required');
+      }
+      if (typeof location.latitude !== 'number' || isNaN(location.latitude)) {
+        throw new Error(`Invalid latitude: ${location.latitude} (type: ${typeof location.latitude})`);
+      }
+      if (typeof location.longitude !== 'number' || isNaN(location.longitude)) {
+        throw new Error(`Invalid longitude: ${location.longitude} (type: ${typeof location.longitude})`);
+      }
+      
       const response = await apiClient.post<StartTrackerResponse>(
         '/tracker/start',
-        {busNumber, ...location},
+        payload,
       );
 
       const session: TrackingSession = {
